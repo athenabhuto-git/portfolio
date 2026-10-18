@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Athena Bhuto | Cybersecurity and Machine Learning</title>
+  <meta name="description" content="Portfolio of Athena Bhuto: M.Tech student in CSE (Cybersecurity) at CUSAT, B.Tech in Information Technology. Multimodal sentiment analysis, secure web apps, Python.">
+  <meta property="og:title" content="Athena Bhuto | Cybersecurity and Machine Learning">
+  <meta property="og:description" content="M.Tech (CSE, Cybersecurity) at CUSAT. I build machine-learning pipelines and secure web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://athenabhuto-git.github.io/portfolio/">
+  <link rel="canonical" href="https://athenabhuto-git.github.io/portfolio/">
+  <meta name="theme-color" content="#12102a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="#top" aria-label="Athena Bhuto, home">Athena Bhuto</a>
+    <nav aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>I build systems that read text, sound and faces, and I'm learning to keep them secure.</h1>
+        <p class="lede">
+          I'm Athena, an M.Tech student in Computer Science with a specialisation in Cybersecurity at CUSAT.
+          My B.Tech is in Information Technology. I'm looking for a fresher role in security, software or machine learning.
+        </p>
+        <p class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </p>
+      </div>
+
+      <figure class="signals" aria-label="Diagram: text, audio and visual signals merge into one sentiment prediction">
+        <svg viewBox="0 0 520 360" role="img" aria-hidden="true">
+          <!-- text signal -->
+          <g class="sig sig-text" fill="none" stroke="var(--teal)" stroke-width="3" stroke-linecap="round">
+            <path d="M20 54 H130" />
+            <path d="M20 74 H100" />
+            <path d="M20 94 H150" />
+          </g>
+          <!-- audio signal -->
+          <path class="sig sig-audio" fill="none" stroke="var(--amber)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                d="M20 180 L40 180 L50 150 L62 212 L74 132 L86 226 L98 160 L110 196 L122 176 L150 180" />
+          <!-- visual signal -->
+          <g class="sig sig-face" fill="var(--violet)">
+            <circle cx="40" cy="282" r="4" /><circle cx="70" cy="270" r="4" /><circle cx="100" cy="270" r="4" /><circle cx="130" cy="282" r="4" />
+            <circle cx="60" cy="304" r="4" /><circle cx="85" cy="316" r="4" /><circle cx="110" cy="304" r="4" />
+          </g>
+          <!-- merge lines -->
+          <g class="merge" fill="none" stroke="var(--line)" stroke-width="2">
+            <path d="M160 74 C250 74 250 180 330 180" />
+            <path d="M160 180 H330" />
+            <path d="M160 294 C250 294 250 180 330 180" />
+          </g>
+          <!-- fused output -->
+          <g class="out">
+            <rect x="330" y="140" width="170" height="80" rx="14" fill="var(--surface)" stroke="var(--amber)" stroke-width="2" />
+            <text x="415" y="176" text-anchor="middle" fill="var(--text)" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="20">one prediction</text>
+            <text x="415" y="200" text-anchor="middle" fill="var(--muted)" font-family="Public Sans, sans-serif" font-size="13">BERT + Librosa + OpenCV</text>
+          </g>
+          <text x="20" y="30" fill="var(--muted)" font-family="Public Sans, sans-serif" font-size="13">text</text>
+          <text x="20" y="130" fill="var(--muted)" font-family="Public Sans, sans-serif" font-size="13">voice</text>
+          <text x="20" y="256" fill="var(--muted)" font-family="Public Sans, sans-serif" font-size="13">face</text>
+        </svg>
+        <figcaption>The idea behind my major project: three signals, one decision.</figcaption>
+      </figure>
+    </section>
+
+    <section class="block" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about-grid">
+        <p>
+          I'm a results-driven postgraduate student who enjoys building things end to end: from cleaning data and training models
+          to wiring up a secure login for a web app. My B.Tech foundation in Information Technology (CGPA 8.23) gave me
+          software engineering, databases and web development. My M.Tech is now pointing that toward ethical hacking,
+          secure systems design and network security.
+        </p>
+        <p>
+          I like technical writing as much as coding. I was the documentation lead for a college club, and I believe a project
+          isn't finished until someone else can understand it.
+        </p>
+      </div>
+    </section>
+
+    <section class="block" id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+
+      <article class="project feature">
+        <div class="project-head">
+          <h3>Multimodal Sentiment Analysis System</h3>
+          <p class="meta">Major project, RSET / CUSAT, Aug 2024 to Apr 2025</p>
+        </div>
+        <p class="summary">
+          A pipeline that decides how someone feels by combining what they say, how they sound and how their face looks,
+          instead of relying on text alone.
+        </p>
+        <ul class="points">
+          <li>Combined <strong>BERT</strong> for language, <strong>Librosa</strong> for audio features and <strong>OpenCV</strong> for facial expressions, reaching higher emotion-detection accuracy than the single-signal baselines.</li>
+          <li>Used cloud-based GPU acceleration to cut training and inference time, which made real-time classification across text, audio and video possible.</li>
+          <li>Handled preprocessing, feature engineering and model evaluation, and wrote up the findings in a full technical report.</li>
+        </ul>
+        <p class="tags"><span>Python</span><span>BERT</span><span>Librosa</span><span>OpenCV</span><span>GPU</span></p>
+        <p class="links" data-links="sentiment"></p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>RSET Internship Cell Portal</h3>
+          <p class="meta">Minor project, Rajagiri School of Engineering and Technology, Feb 2024 to May 2024</p>
+        </div>
+        <div class="project-cols">
+          <p class="summary">
+            A full-stack web portal that gives 1,000+ students one place to find internships and apply through the college's internship cell.
+          </p>
+          <ul class="points">
+            <li>Built secure sign-in and student profile management on Node.js and MongoDB, following REST API design.</li>
+            <li>Added an internship request workflow so applications and responses can be tracked by the administration.</li>
+          </ul>
+        </div>
+        <p class="tags"><span>Node.js</span><span>MongoDB</span><span>REST</span><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+        <p class="links" data-links="portal"></p>
+      </article>
+    </section>
+
+    <section class="block" id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, Java, C, C++</dd></div>
+        <div><dt>Web</dt><dd>HTML5, CSS3, JavaScript (ES6+), Node.js, REST APIs</dd></div>
+        <div><dt>Databases</dt><dd>MongoDB, SQL and relational databases</dd></div>
+        <div><dt>AI and ML</dt><dd>BERT (NLP), OpenCV (computer vision), Librosa (audio processing)</dd></div>
+        <div><dt>Security</dt><dd>Ethical hacking, secure authentication, network security, vulnerability assessment</dd></div>
+        <div><dt>Tools</dt><dd>Git, VS Code, cloud GPU environments</dd></div>
+        <div><dt>Working style</dt><dd>Problem solving, creative thinking, time management, technical documentation</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="background" aria-labelledby="bg-h">
+      <h2 id="bg-h">Background</h2>
+
+      <div class="cols">
+        <div>
+          <h3>Education</h3>
+          <ol class="timeline">
+            <li>
+              <p class="when">Jul 2025 to present</p>
+              <p class="what">M.Tech, Computer Science with Cybersecurity</p>
+              <p class="where">Cochin University of Science and Technology (CUSAT). Current CGPA 8.19. Focus on secure systems and network security.</p>
+            </li>
+            <li>
+              <p class="when">Nov 2021 to May 2025</p>
+              <p class="what">B.Tech, Information Technology</p>
+              <p class="where">Rajagiri School of Engineering and Technology. CGPA 8.23. Software engineering, web development, databases, data structures.</p>
+            </li>
+            <li>
+              <p class="when">Jun 2019 to Mar 2021</p>
+              <p class="what">Higher Secondary, Computer Science with Mathematics</p>
+              <p class="where">Bharathiya Vidya Bhavans Vidyamandir. 95%.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>Experience</h3>
+          <ol class="timeline">
+            <li>
+              <p class="when">Aug 2024 to Apr 2025</p>
+              <p class="what">Documentation Lead, NDLI Club</p>
+              <p class="where">Rajagiri School of Engineering and Technology. Ran documentation and records for the National Digital Library of India Club, and coordinated reports and event write-ups across teams.</p>
+            </li>
+            <li>
+              <p class="when">Sep 2023</p>
+              <p class="what">Python Development Intern</p>
+              <p class="where">NEST Cyber Campus, Aluva. A seven-day intensive on data structures, file I/O and scripting.</p>
+            </li>
+            <li>
+              <p class="when">Aug 2022</p>
+              <p class="what">Mathematics Teaching Intern, Project Ganitham</p>
+              <p class="where">Insight for Innovation and NSS (online). Taught maths to high school students in a social-impact programme.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="extras">
+        <h3>Certifications and achievements</h3>
+        <ul>
+          <li>Certification in C and C++ programming</li>
+          <li>Second place in Hindi poem writing, CBSE District Kalolsav</li>
+        </ul>
+        <p class="langs">Languages: English (fluent), Malayalam (fluent), Hindi (proficient)</p>
+      </div>
+    </section>
+
+    <section class="block contact" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p class="lede">I'm open to fresher roles and internships in cybersecurity, software development and machine learning. The quickest way to reach me is email.</p>
+      <p class="actions">
+        <a class="btn primary" href="mailto:athenabhuto@gmail.com">athenabhuto@gmail.com</a>
+        <a class="btn" href="https://linkedin.com/in/athena-bhuto-a9b75924b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" data-github-profile hidden target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Athena Bhuto. Kerala, India.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
