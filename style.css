@@ -158,6 +158,21 @@ h3 { font-size: 1.35rem; font-weight: 700; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 900px; }
 .about-grid p { color: #d4d2ee; }
 
+.about-wrap { display: grid; grid-template-columns: 240px 1fr; gap: 44px; align-items: start; max-width: 960px; }
+.about-wrap.no-photo { grid-template-columns: 1fr; }
+.about-wrap:not(.no-photo) .about-grid { grid-template-columns: 1fr; gap: 20px; max-width: 40em; }
+.portrait { margin: 0; }
+.portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
 /* projects */
 .project {
   background: var(--surface);
@@ -238,6 +253,8 @@ footer { padding-top: 40px; padding-bottom: 48px; color: var(--muted); font-size
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 48px; }
   .signals { max-width: 460px; }
   .about-grid, .cols, .project-cols { grid-template-columns: 1fr; gap: 28px; }
+  .about-wrap { grid-template-columns: 1fr; gap: 28px; }
+  .portrait { max-width: 240px; }
   .block { padding-top: 64px; }
   .project, .project.feature { padding: 24px; }
 }

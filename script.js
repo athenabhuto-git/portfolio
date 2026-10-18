@@ -30,4 +30,17 @@ const CONFIG = {
       box.appendChild(a);
     });
   });
+
+  // Show the portrait only if photo.jpg exists in the repo.
+  const portrait = document.getElementById("portrait");
+  if (portrait) {
+    const img = portrait.querySelector("img");
+    const hide = function () {
+      portrait.remove();
+      const wrap = document.querySelector(".about-wrap");
+      if (wrap) wrap.classList.add("no-photo");
+    };
+    if (img.complete && img.naturalWidth === 0) hide();
+    else img.addEventListener("error", hide);
+  }
 })();
